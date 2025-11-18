@@ -1,0 +1,241 @@
+/* 🎨 General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+/* 🍽️ Header Section */
+header {
+  background-color: #ff7f50;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* 🔗 Navigation Bar */
+nav {
+  background-color: #ff9966;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #ff7f50;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff9966;
+  transform: scale(1.05);
+}
+
+/* 🧾 Menu Headings */
+h2 {
+  text-align: center;
+  color: #ff6600;
+  margin-top: 40px;
+  font-size: 1.8rem;
+}
+
+/* 🍛 Menu Item Rows */
+.menu-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background-color: #fff3e0;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.item h3 {
+  color: #ff6600;
+  margin: 10px 0 5px;
+}
+
+.item p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* 📞 Contact Section */
+#contact {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffe5d9;
+  border-top: 2px solid #ff9966;
+  margin-top: 40px;
+}
+
+/* ⚙️ Footer */
+footer {
+  text-align: center;
+  background-color: #ff7f50;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* 🛍️ Cart Modal Styling */
+#cart-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#cart-content {
+  background: #fff5ee;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#cart-content h2 {
+  color: #ff7f50;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#cart-content p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+#cart-content h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+#cart-content button {
+  margin-top: 15px;
+  margin-right: 10px;
+  background: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cart-content button:hover {
+  background: #ff6333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* 🛒 Floating Cart Icon */
+#floating-cart {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: 0.3s;
+}
+#floating-cart:hover {
+  background-color: #ff6333;
+}
+#cart-count {
+  background: white;
+  color: #ff7f50;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+/* 🔥 Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 2000;
+}
+.toast.hide {
+  opacity: 0;
+}
+
+/* ✈️ Add-to-Cart Animation */
+.fly-img {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  transition: all 0.8s ease-in-out;
+  z-index: 1500;
+  pointer-events: none;
+}

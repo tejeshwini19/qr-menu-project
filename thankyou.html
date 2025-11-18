@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Foodie Delight</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff7f0; /* same as index.html */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .thank-you-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff7f50;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #555;
+      max-width: 450px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    a.back-home {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 28px;
+      background-color: #ff7f50;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    a.back-home:hover {
+      background-color: #ff9966;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ff7f50;
+      background-color: #fff7f0; /* same as body */
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      p { font-size: 1.15rem; max-width: 90%; }
+      a.back-home { padding: 12px 24px; font-size: 1rem; }
+      footer { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+      p { font-size: 1rem; }
+      a.back-home { padding: 10px 20px; font-size: 0.95rem; }
+      footer { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-container">
+    <h1>Thank You!</h1>
+    <p>Your order is confirmed and placed successfully. We hope you enjoy your meal!</p>
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </div>
+
+  <footer>
+    Foodie Delight 🍽️
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Menu - Foodie Delight</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #fff7f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #ff7f50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px 20px;
+    }
+
+    img.qr-code {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    a.menu-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff7f50;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    a.menu-btn:hover {
+      background-color: #ff9966;
+      transform: scale(1.05);
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      color: #ff7f50;
+      font-weight: 500;
+      padding: 15px 0;
+      background-color: #fff7f0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      img.qr-code { width: 200px; height: 200px; }
+      p { font-size: 1rem; }
+      a.menu-btn { padding: 10px 20px; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Foodie Delight 🍴</h1>
+  </header>
+
+  <main>
+    <img src="images/qr-code.png (4).png" alt="Scan QR Code" class="qr-code">
+    <p>Scan QR code or click below to open menu</p>
+    <a href="menu.html" class="menu-btn">Open Menu</a>
+  </main>
+
+  
+
+</body>
+</html>
